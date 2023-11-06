@@ -4,7 +4,7 @@ const { createGallery, getGallery, getGalleries } = require('../controllers/gall
 const router = express.Router();
 
 router.post('/create', createGallery);
-router.get('/getOne', getGallery);
-router.get('/get/:id', getGalleries);
+router.get('/getAll', getGalleries);
+router.get('/get/:id', getGallery);
 
 module.exports = router;
